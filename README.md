@@ -36,7 +36,7 @@ Obtiene información del usuario.
 
 ```bash
 curl --request GET \
-  --url http://localhost:3000/api/v1/info/cristiano
+  --url 'http://localhost:3000/api/v1/info/cristiano'
 ```
 
 ## Features 📌
