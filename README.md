@@ -2,6 +2,9 @@
 
 Este un proyecto de scraping de la API de Instagram, que permite obtener información de los perfiles de los usuarios, como el avatar, etc
 
+> [!WARNING]  
+> Este proyecto se encuentra en desarrollo. (tomar en cuenta) 🚧
+
 ## Instalación 🚀
 
 ```bash
@@ -18,23 +21,31 @@ npm start
 
 ## API 📖
 
-### GET /api/v1/avatar?username=user
+### <span style="color:green;"> GET </span> /api/v1/avatar/:username
 
 Obtiene el avatar del usuario.
 
 ```bash
 curl --request GET \
-  --url 'http://localhost:3000/api/v1/avatar?username=ronaldo'
+  --url 'http://localhost:3000/api/v1/avatar/cristiano'
+```
 
+### <span style="color:green;"> GET </span> /api/v1/info/:username
+
+Obtiene información del usuario.
+
+```bash
+curl --request GET \
+  --url http://localhost:3000/api/v1/info/cristiano
 ```
 
 ## Features 📌
 
 - [x] Obtener avatar de usuario
-- [ ] Obtener publicaciones de usuario
-- [ ] Obtener seguidores de usuario
-- [ ] Obtener seguidos de usuario
-- [ ] Obtener información de usuario
-- [ ] Obtener información de publicación
+- [x] Obtener publicaciones de usuario
+- [x] Obtener seguidores de usuario
+- [x] Obtener seguidos de usuario
+- [x] Obtener información de usuario
+- [x] Obtener información de publicación
 
-Este proyecto se encuentra en desarrollo. 🚧
+
